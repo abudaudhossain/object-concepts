@@ -27,3 +27,17 @@ Object.freeze(myFreind);
 myFreind.name = 'vaitun';
 delete myFreind.freind;
 // console.log(myFreind);
+
+// console.log(myFreind);
+
+for(const prop in myFreind){
+//    console.log(prop, ": ",myFreind[prop])
+}
+// console.log(name);
+for(const prop of Object.keys(myFreind)){
+    // console.log(prop, ": ",myFreind[prop])
+}
+
+for(const [prop, value] of Object.entries(myFreind)){
+    console.log(prop, ': ', value);
+}
